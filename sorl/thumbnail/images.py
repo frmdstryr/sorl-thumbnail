@@ -52,13 +52,13 @@ class BaseImageFile(object):
 
     @property
     def width(self):
-        return self.size[0]
+        return self.size[0] if self.size else 0
 
     x = width
 
     @property
     def height(self):
-        return self.size[1]
+        return self.size[1] if self.size else 0
 
     y = height
 
